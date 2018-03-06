@@ -1,31 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'maven-publish'
-
-group = 'com.kellinreaver'
-archivesBaseName = 'uiwizard'
-version = '0.1.4-SNAPSHOT'
-
-publishing {
-    repositories {
-        maven {
-            url myMavenRepoWriteUrl
-            credentials {
-                username 'wildan.garviandi@amartha.com'
-                password myMavenRepoReadPassword
-            }
-        }
-    }
-
-    publications {
-        aar(MavenPublication) {
-            groupId group
-            artifactId archivesBaseName
-            version project.version
-
-            artifact("$buildDir/outputs/aar/${archivesBaseName}-release.aar")        }
-    }
-}
 
 android {
     compileSdkVersion 26
