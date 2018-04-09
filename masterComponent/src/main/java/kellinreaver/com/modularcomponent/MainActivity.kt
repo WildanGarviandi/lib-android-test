@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Toast
 import kellinreaver.com.uiwizard.ButtonBottomWhite
 
+// this activity proposed to test the UI that create on the android-uikit module
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

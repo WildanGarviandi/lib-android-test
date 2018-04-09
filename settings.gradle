@@ -1,1 +1,1 @@
-include ':masterComponent', ':uiwizard'
+include ':masterComponent', ':android-uikit'
